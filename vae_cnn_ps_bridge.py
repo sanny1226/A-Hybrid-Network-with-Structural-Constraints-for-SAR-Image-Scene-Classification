@@ -263,7 +263,7 @@ vae.compile(optimizer=Adam(lr=0.01, beta_1=0.5))
 pp=[]
 for i in range(50):
     x=vae.fit(x_train,x_train, epochs=vae_epoch, batch_size=batch_size,shuffle=True)
-    pp.append(x.history['loss'][0]-0.8)
+    pp.append(x.history['loss'][0])
 print(pp)
 
 
